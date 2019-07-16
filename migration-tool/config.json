@@ -1,0 +1,58 @@
+{
+  "scope": {
+    "metadata": {
+      "migrate": true
+    },
+    "policies": {
+      "migrate": true
+    },
+    "collections": {
+      "migrate": true
+    },
+    "database": {
+      "migrate": true,
+      "exclude": [
+        "APEX$TEAM_DEV_FILES"
+      ]      
+    },
+    "location": {
+      "migrate": true
+    },
+    "security": {
+      "migrate": true,
+      "profiles": true
+    },
+    "analytics": {
+      "migrate": false
+    }
+  },
+  "source_instance": {
+    "instance_url": "https://emersonmobilecloud-a472144.mobileenv.us2.oraclecloud.com:443",
+    "token_url": "https://a472144.identity.us.oraclecloud.com/oam/oauth2/tokens",
+    "client_id": "bd32284f-7974-4c47-a25f-26bb1d555dc4",
+    "client_secret": "CpvWDIrxqNOylwxRSFN0",
+    "username": "yamank.singh@sofbang.com",
+    "password": "Sfb@2019",
+    "identity_domain": "a472144"
+  },
+  "target_instance": {
+    "instance_url": "https://E652694781804221963B6609C43D8334.mobile.ocp.oraclecloud.com:443",
+    "token_url": "https://idcs-c2745f4c93b64a5ba9e5c5988bfef519.identity.oraclecloud.com/oauth2/v1/token",
+    "client_id": "d1d052554a2b4b7d892c6084af11c0d6",
+    "client_secret": "9d69005e-fd41-45d5-87da-8261240bd3e6",
+    "username": "yamank.singh@sofbang.com",
+    "password": "Sofbang@2019"
+  },
+  "storage_account": {
+    "X-Storage-BaseUrl": "https://swiftobjectstorage.us-ashburn-1.oraclecloud.com",
+    "X-Storage-Tenant": "emersoncorp",
+    "X-Storage-Account": "emersoncorp",
+    "X-Storage-Container": "EFSAMCStoOMH",
+    "X-Storage-User": "khalid.khan",
+    "X-Storage-Password": "Emerson#2019"
+  },
+  "security": {
+    "X-Data-EncryptionKey": "UserPassword",
+    "X-Data-ExportFormat": "2"
+  }
+}
